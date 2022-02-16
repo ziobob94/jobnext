@@ -1,0 +1,8 @@
+
+/api/server_config.json
+/api/node_modules
+
+/client/.idea
+/client/node_modules
+
+.idea/

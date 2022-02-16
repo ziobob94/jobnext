@@ -1,0 +1,35 @@
+/*{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "amd",
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "outFile": "./dist/index.js",
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/index.tsx"
+  ]
+}*/
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "strict": true,
+    "sourceMap": true,
+    "target": "esnext",
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
