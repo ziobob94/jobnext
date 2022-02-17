@@ -1,3 +1,4 @@
+const configServer = require("./server_config.json");
 const createError = require('http-errors');
 const express = require('express');
 const cookieParser = require('cookie-parser');
@@ -5,7 +6,6 @@ const logger = require('morgan');
 const path = require('path');
 const { MongoClient } = require('mongodb');
 const jobsAPIRouter = require("./controllers/jobs");
-const configServer = require("./server_config.json");
 
 const app = express();
 const client = new MongoClient(configServer.dburi)
@@ -13,13 +13,9 @@ const client = new MongoClient(configServer.dburi)
 client.connect()
     .then((res) => {
         app.set("db_client", res.db("nextjob_test"));
-        console.log(res.db("nextjob_test"))
         console.log("CONNECTION SUCCEEDED");
     })
     .catch((err) => console.log(err.message))
-
-
-app.set("db_uri",configServer.dburi);
 
 
 app.use(logger('dev'));
