@@ -1,8 +1,12 @@
 
-/api/server_config.json
-/api/node_modules
+/packages/api/server_config.json
+/packages/api/node_modules
 
-/client/.idea
-/client/node_modules
+/packages/client/.idea
+/packages/client/node_modules
 
 .idea/
+
+node_modules
+
+/packages/client/package-lock.json
