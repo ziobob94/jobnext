@@ -6,10 +6,11 @@ const logger = require('morgan');
 const path = require('path');
 const { MongoClient } = require('mongodb');
 const jobsAPIRouter = require("./controllers/jobs");
+//const open = require("open");
 
 const app = express();
 const client = new MongoClient(configServer.dburi)
-
+/*
 client.connect()
     .then((res) => {
         app.set("db_client", res.db("nextjob_test"));
@@ -17,7 +18,19 @@ client.connect()
     })
     .catch((err) => console.log(err.message))
 
+*/
+let clientConnect = async () => {
+    let res
+    try {
+        res = await client.connect()
+    }
+    catch (err){
+        console.log(err)
+    }
+    return res;
+}
 
+clientConnect();
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

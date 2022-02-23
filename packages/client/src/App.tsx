@@ -8,7 +8,6 @@ const App : React.FC = () => {
     useEffect(() => {
         getJobs()
             .then((res) => setJobs(res))
-
     },[])
 
 
