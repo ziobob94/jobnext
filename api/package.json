@@ -1,0 +1,36 @@
+{
+  "name": "jobnext-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b tsconfig.json && tsc builder.ts && node builder.js",
+    "run": "tsc -b tsconfig.json && node dist/src/server.js",
+    "start": "node dist/src/server.js"
+  },
+  "author": "Mauro Ciccullo",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/http-errors": "^1.8.2",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^10.1.0",
+    "js-sha256": "^0.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "ts-config": "^20.10.0",
+    "ts-node": "^10.8.2"
+  }
+}

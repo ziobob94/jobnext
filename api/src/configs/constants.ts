@@ -1,0 +1,9 @@
+export const EMAIL_IS_EMPTY: string = "EMAIL_IS_EMPTY";
+export const PASSWORD_IS_EMPTY: string = "PASSWORD_IS_EMPTY";
+export const PASSWORD_LENGTH_MUST_BE_MORE_THAN_8: string = "PASSWORD_LENGTH_MUST_BE_MORE_THAN_8";
+export const WRONG_PASSWORD: string = "WRONG_PASSWORD";
+export const SOME_THING_WENT_WRONG: string = "SOME_THING_WENT_WRONG";
+export const USER_EXISTS_ALREADY: string = "USER_EXISTS_ALREADY";
+export const USER_DOES_NOT_EXIST: string = "USER_DOES_NOT_EXIST";
+export const TOKEN_IS_EMPTY: string = "TOKEN_IS_EMPTY";
+export const EMAIL_IS_IN_WRONG_FORMAT: string = "EMAIL_IS_IN_WRONG_FORMAT";
